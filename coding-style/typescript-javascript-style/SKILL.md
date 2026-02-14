@@ -20,4 +20,5 @@ description: Apply Google JavaScript and TypeScript style guidance with strict t
 - Prefer `strict` TypeScript configuration.
 - Prefer `unknown` over `any` at uncertain boundaries, then narrow.
 - Use discriminated unions for stateful flows.
+- Avoid free-form string keys when the key set is fixed; model fixed-key data with interfaces or other typed object shapes.
 - Keep runtime validation at trust boundaries.
