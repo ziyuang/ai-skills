@@ -20,4 +20,4 @@ description: Enforce hard Python completion gates with static and runtime checks
 - If any gate fails, do not claim completion.
 - For bug fixes, include or update a regression test.
 - Do not merge formatting, refactor, and functional fixes without separate verification evidence.
-- Apply `skills/global/testing-principles/SKILL.md` when creating or reviewing tests.
+- Apply `skills/testing-principles/SKILL.md` when creating or reviewing tests.

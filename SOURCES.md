@@ -15,9 +15,18 @@ Use this file as the source manifest for your global skills directory.
 - Google JavaScript Style Guide: https://google.github.io/styleguide/jsguide.html
 - Google TypeScript Style Guide: https://google.github.io/styleguide/tsguide.html
 
+## Official IaC guides (primary)
+- Terraform style guide: https://developer.hashicorp.com/terraform/language/style
+- OpenTofu docs: https://opentofu.org/docs/
+
 ## Local coding-style skill locations
 - `coding-style/python-style/SKILL.md`
 - `coding-style/typescript-javascript-style/SKILL.md`
+- `coding-style/opentofu-style/SKILL.md`
+
+## Local IaC tooling + verification skill locations
+- `tooling-workflow/opentofu-tooling-workflow/SKILL.md`
+- `verification-before-completion/opentofu-verification-before-completion/SKILL.md`
 
 ## Inspirations from skills.sh
 - `verification-before-completion` (obra/superpowers): https://skills.sh/obra/superpowers/verification-before-completion
@@ -80,7 +89,13 @@ Selected transferable entries:
 - https://raw.githubusercontent.com/wshobson/agents/main/plugins/developer-essentials/skills/debugging-strategies/SKILL.md
 - https://raw.githubusercontent.com/obra/superpowers/main/skills/receiving-code-review/SKILL.md
 - https://raw.githubusercontent.com/obra/superpowers/main/skills/requesting-code-review/SKILL.md
+- https://raw.githubusercontent.com/hashicorp/agent-skills/main/terraform/code-generation/skills/terraform-style-guide/SKILL.md
+- https://raw.githubusercontent.com/hashicorp/agent-skills/main/terraform/code-generation/skills/terraform-test/SKILL.md
+- https://raw.githubusercontent.com/hashicorp/agent-skills/main/terraform/module-generation/skills/refactor-module/SKILL.md
+- https://raw.githubusercontent.com/hashicorp/agent-skills/main/terraform/module-generation/skills/terraform-stacks/SKILL.md
+- https://raw.githubusercontent.com/cosmix/claude-loom/main/skills/terraform/SKILL.md
 
 ## Notes
 - Local adaptation prioritized "minimal surface area, explicit invariants, fail-fast core logic."
 - Keep language-specific variants only where behavior/check commands differ.
+- IaC adaptation uses OpenTofu-first commands with Terraform compatibility where repositories still standardize on Terraform.
