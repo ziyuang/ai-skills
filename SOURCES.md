@@ -15,6 +15,10 @@ Use this file as the source manifest for your global skills directory.
 - Google JavaScript Style Guide: https://google.github.io/styleguide/jsguide.html
 - Google TypeScript Style Guide: https://google.github.io/styleguide/tsguide.html
 
+## Local coding-style skill locations
+- `coding-style/python-style/SKILL.md`
+- `coding-style/typescript-javascript-style/SKILL.md`
+
 ## Inspirations from skills.sh
 - `verification-before-completion` (obra/superpowers): https://skills.sh/obra/superpowers/verification-before-completion
 - `systematic-debugging` (obra/superpowers): https://skills.sh/obra/superpowers/systematic-debugging

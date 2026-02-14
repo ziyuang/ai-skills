@@ -1,5 +1,5 @@
 ---
-name: google-python-style
+name: python-style
 description: Apply Google Python style and typing discipline with strict simplicity rules. Use when writing or reviewing Python code for naming, structure, docstrings, and static type safety.
 ---
 
@@ -12,13 +12,14 @@ description: Apply Google Python style and typing discipline with strict simplic
 ## Required rules
 - Follow Google naming, import, and module structure conventions.
 - Annotate public APIs with Python 3.12+ type syntax.
-- Use `Any` instead of `object` when a deliberately wide type is required.
+- Type determines behavior: prefer static, type-directed design over runtime value-driven branching.
+- Avoid runtime type checks in core logic when behavior can be made explicit through type design.
 - Keep APIs explicit: avoid hidden side effects and magic sentinel values.
 - Prefer explicit constants and helper predicates for special states.
 - Keep module boundaries clean: parse/validate external input at edges.
 
 ## Type discipline
 - Use precise return types; avoid implicit `None` return paths.
-- Use union syntax (`T | None`) for optional values.
+- Use `T | None` for optional values; avoid broader unions that make static behavior ambiguous.
 - Use dataclasses or typed classes for structured data, not loose dicts.
-- Keep `Any` usage intentional and local.
+- Refrain from annotating `Any`; find concrete library types or introduce typed wrappers/protocols.

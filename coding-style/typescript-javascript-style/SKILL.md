@@ -1,5 +1,5 @@
 ---
-name: google-typescript-javascript-style
+name: typescript-javascript-style
 description: Apply Google JavaScript and TypeScript style guidance with strict type and module discipline. Use when writing or reviewing TS/JS for style, naming, docs, and static safety.
 ---
 
