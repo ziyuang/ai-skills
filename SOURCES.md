@@ -1,6 +1,6 @@
 # Global Skill Sources
 
-Last refreshed: February 14, 2026.
+Last refreshed: February 17, 2026.
 
 Use this file as the source manifest for your global skills directory.
 
@@ -19,10 +19,15 @@ Use this file as the source manifest for your global skills directory.
 - Terraform style guide: https://developer.hashicorp.com/terraform/language/style
 - OpenTofu docs: https://opentofu.org/docs/
 
+## Readability (book)
+- Dustin Boswell, Trevor Foucher: *The Art of Readable Code* (O'Reilly)
+- Christian Mayer: *The Art of Clean Code: Best Practices to Eliminate Complexity and Simplify Your Life* (No Starch Press)
+
 ## Local coding-style skill locations
 - `coding-style/python-style/SKILL.md`
 - `coding-style/typescript-javascript-style/SKILL.md`
 - `coding-style/opentofu-style/SKILL.md`
+- `coding-style/the-art-of-readable-code/SKILL.md`
 
 ## Local IaC tooling + verification skill locations
 - `tooling-workflow/opentofu-tooling-workflow/SKILL.md`
