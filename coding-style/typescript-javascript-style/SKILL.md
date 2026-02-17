@@ -13,6 +13,7 @@ description: Apply Google JavaScript and TypeScript style guidance with strict t
 - Follow Google naming, import, and file-organization conventions.
 - Favor explicit types at module boundaries.
 - Avoid implicit `any` and hidden coercions.
+- Do not use `if (!...) ... else ...`; prefer positive conditions with `if (...) ... else ...`.
 - Keep functions focused and predictable.
 - Use constants for special states; avoid magic literals.
 

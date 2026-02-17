@@ -14,6 +14,7 @@ description: Apply Google Python style and typing discipline with strict simplic
 - Annotate public APIs with Python 3.12+ type syntax.
 - Type determines behavior: prefer static, type-directed design over runtime value-driven branching.
 - Avoid runtime type checks in core logic when behavior can be made explicit through type design.
+- Do not use `if not ... else ...`; prefer positive conditions with `if ... else ...`.
 - Keep APIs explicit: avoid hidden side effects and magic sentinel values.
 - Prefer explicit constants and helper predicates for special states.
 - Keep module boundaries clean: parse/validate external input at edges.
