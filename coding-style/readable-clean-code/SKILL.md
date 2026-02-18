@@ -1,6 +1,6 @@
 ---
 name: readable-clean-code
-description: Apply combined principles from "The Art of Readable Code" and "The Art of Clean Code" to minimize time-to-understand and complexity via clear naming, high-signal comments, consistent formatting, natural control flow, small focused functions, low coupling, minimal duplication, test readability, and refactoring discipline. Use when writing, refactoring, or reviewing code where maintainability depends on clarity and simplicity.
+description: Cross-language readability + simplicity overlay based on "The Art of Readable Code" and "The Art of Clean Code". Use when refactoring or reviewing for clarity/simplicity, or when choosing between implementations and you need time-to-understand tie-breakers. Use alongside language-specific style skills (e.g., python-style, typescript-javascript-style), not as a replacement.
 ---
 
 # Readable + Clean Code Style

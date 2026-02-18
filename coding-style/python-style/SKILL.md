@@ -1,6 +1,6 @@
 ---
 name: python-style
-description: Apply Google Python style and typing discipline with strict simplicity rules. Use when writing or reviewing Python code for naming, structure, docstrings, and static type safety.
+description: Apply Google Python style and typing discipline with strict simplicity rules. Use when writing or reviewing Python code for naming, structure, docstrings, and static type safety. Combine with readable-clean-code for cross-language readability tie-breakers and complexity reduction.
 ---
 
 # Google Python Style

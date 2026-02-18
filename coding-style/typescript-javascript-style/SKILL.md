@@ -1,6 +1,6 @@
 ---
 name: typescript-javascript-style
-description: Apply Google JavaScript and TypeScript style guidance with strict type and module discipline. Use when writing or reviewing TS/JS for style, naming, docs, and static safety.
+description: Apply Google JavaScript and TypeScript style guidance with strict type and module discipline. Use when writing or reviewing TS/JS code for language-specific conventions (imports/modules), type safety (avoid implicit any/coercions), and boundary typing. Combine with readable-clean-code for cross-language readability tie-breakers.
 ---
 
 # Google TypeScript + JavaScript Style
