@@ -7,8 +7,8 @@ description: Design tests that prove real behavior and catch invalid states earl
 
 ## What tests must prove
 1. Coverage is meaningful: core paths, edge paths, and failure paths are exercised.
-2. Behavior works in realistic execution paths, not toy-only cases.
-3. Invalid states fail loudly; they must not pass silently.
+2. Keep tests small and atomic, but run through realistic unit-level execution paths (not toy-only cases).
+3. Invalid states fail loudly, with state origin understood and legality made explicit.
 
 ## Test design rules
 - Do not write tests just to increase test count.
@@ -18,7 +18,8 @@ description: Design tests that prove real behavior and catch invalid states earl
 
 ## Illegal-state discipline
 - If a value or state is unexpected (examples: `null`/`None`/`undefined`), stop and ask why it is legal.
-- Do not add permissive branches only to make tests pass.
+- Trace unexpected state to its source before changing behavior.
+- Do not add arbitrary or permissive branches only to make tests pass.
 - Encode legality explicitly: if illegal, fail; if legal, type/validate and test both paths.
 
 ## Anti-patterns
