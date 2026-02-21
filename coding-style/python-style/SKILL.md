@@ -24,4 +24,4 @@ description: Apply Google Python style and typing discipline with strict simplic
 - Use `T | None` for optional values; avoid broader unions that make static behavior ambiguous.
 - Use dataclasses or typed classes for structured data, not loose dicts.
 - Avoid free-form string keys when the key set is fixed; model fixed-key data with dataclasses or other typed classes.
-- Refrain from annotating `Any`; find concrete library types or introduce typed wrappers/protocols.
+- Use `Any` only when it is genuinely unavoidable; otherwise find concrete library types or introduce typed wrappers/protocols. Do not use `object` as a fallback type.
