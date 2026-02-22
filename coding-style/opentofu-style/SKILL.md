@@ -1,6 +1,6 @@
 ---
 name: opentofu-style
-description: Apply OpenTofu/Terraform HCL style with explicit module contracts, stable resource addressing, and reproducible provider/version constraints. Use when writing or reviewing .tf/.tfvars/.hcl infrastructure code.
+description: OpenTofu/Terraform HCL authoring style for explicit module contracts, stable resource addressing, and reproducible provider/version constraints. Use when writing or reviewing .tf/.tfvars/.hcl infrastructure code. Do not use for command workflow or final completion-gate decisions.
 ---
 
 # OpenTofu Style

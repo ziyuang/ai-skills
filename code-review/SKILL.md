@@ -1,6 +1,6 @@
 ---
 name: code-review
-description: Review code with severity-first findings and complexity pressure across languages. Use when auditing diffs for correctness, regressions, and unnecessary abstraction.
+description: Severity-first code review across languages focused on correctness, regressions, data safety, and unnecessary abstraction. Use when the user asks for a review or to audit a diff/PR. Do not use as the primary writing/style guide.
 ---
 
 # Code Review First Principles

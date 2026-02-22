@@ -1,6 +1,6 @@
 ---
 name: python-tooling-workflow
-description: Use a strict Python tooling workflow for environment setup, dependency management, and fast code search. Use when bootstrapping or maintaining Python projects.
+description: Python tooling workflow for environment setup, dependency management, and fast code search during project setup and maintenance. Use when bootstrapping or maintaining Python projects. Do not use as the final completion gate before claiming code is complete (use python-verification-before-completion).
 ---
 
 # Python Tooling Workflow

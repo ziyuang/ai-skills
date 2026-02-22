@@ -1,6 +1,6 @@
 ---
 name: error-handling
-description: Apply boundary-first error handling with fail-fast core logic across languages. Use when designing exceptions/errors, retries, translation layers, and operational failure paths.
+description: Boundary-first error handling with fail-fast core logic across languages. Use when designing exceptions/errors, retries, error translation layers, or operational failure paths. Do not use for general refactors that do not change failure behavior.
 ---
 
 # Error Handling First Principles

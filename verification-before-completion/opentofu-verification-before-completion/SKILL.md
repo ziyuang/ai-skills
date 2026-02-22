@@ -1,6 +1,6 @@
 ---
 name: opentofu-verification-before-completion
-description: Enforce hard OpenTofu completion gates with fmt, init, validate, and plan evidence before claiming infrastructure changes are complete.
+description: Final OpenTofu/Terraform completion gate with required fmt/init/validate/plan evidence before claiming infrastructure changes are complete. Use immediately before completion claims. Do not use as a substitute for ongoing workflow setup/maintenance decisions.
 ---
 
 # OpenTofu Verification Before Completion
@@ -20,4 +20,3 @@ description: Enforce hard OpenTofu completion gates with fmt, init, validate, an
 - For production-impacting changes, require plan evidence for each affected environment.
 - Do not run `apply`/`destroy` without explicit user instruction.
 - Delete stale `tfplan` artifacts when they are no longer needed.
-

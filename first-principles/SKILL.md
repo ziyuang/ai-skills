@@ -1,6 +1,6 @@
 ---
 name: first-principles
-description: Apply strict first-principles engineering rules across languages. Use for Python, TypeScript, and JavaScript when correctness, simplicity, and explicit invariants are required.
+description: Fallback first-principles engineering guardrails for Python/TypeScript/JavaScript when correctness, simplicity, and explicit invariants need to be re-established. Use when no more specific skill fits or when design constraints are unclear. Do not use instead of specialized skills such as debugging, testing, error-handling, style, tooling, or verification gates.
 ---
 
 # Engineering First Principles

@@ -1,6 +1,6 @@
 ---
 name: python-verification-before-completion
-description: Enforce hard Python completion gates with static and runtime checks. Use before claiming code is complete, fixed, or ready.
+description: Final Python completion gate with required static and runtime checks before claiming code is complete, fixed, or ready. Use immediately before completion claims. Do not use as a substitute for setup/maintenance workflow guidance.
 ---
 
 # Python Verification Before Completion

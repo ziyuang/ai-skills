@@ -1,6 +1,6 @@
 ---
 name: systematic-debugging
-description: Debug with evidence and root-cause isolation before patching. Use for Python, TypeScript, and JavaScript when failures, flaky behavior, or regressions appear.
+description: Evidence-driven debugging with root-cause isolation before patching. Use for Python/TypeScript/JavaScript when failures, flaky behavior, or regressions appear and the cause is unknown. Do not use for feature implementation when there is no observed failure.
 ---
 
 # Systematic Debugging First Principles

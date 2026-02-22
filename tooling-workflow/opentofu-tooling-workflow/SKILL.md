@@ -1,6 +1,6 @@
 ---
 name: opentofu-tooling-workflow
-description: Use a strict OpenTofu workflow for initialization, formatting, validation, and planning with safe state handling. Use when bootstrapping or maintaining OpenTofu/Terraform infrastructure repositories.
+description: OpenTofu/Terraform tooling workflow for initialization, formatting, validation, planning, and safe state handling during day-to-day infrastructure work. Use when bootstrapping or maintaining infrastructure repositories. Do not use as the final completion gate before claiming infra changes are complete (use opentofu-verification-before-completion).
 ---
 
 # OpenTofu Tooling Workflow
@@ -13,4 +13,3 @@ description: Use a strict OpenTofu workflow for initialization, formatting, vali
 6. Use remote state with locking for shared environments; do not rely on local state for team workflows.
 7. Keep environment separation explicit (separate directories, workspaces, or var-files); do not mix patterns silently.
 8. Prefer `rg` and `rg --files` for repository search.
-

@@ -1,6 +1,6 @@
 ---
 name: postgresql-table-design
-description: Design PostgreSQL schemas with explicit constraints and migration safety across language stacks. Use when changing tables, indexes, and relational contracts.
+description: PostgreSQL schema design with explicit constraints and migration safety across language stacks. Use when changing tables, columns, indexes, keys, or relational contracts. Do not use for app-only code changes that do not alter database contracts.
 ---
 
 # PostgreSQL Table Design First Principles

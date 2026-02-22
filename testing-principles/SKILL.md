@@ -1,6 +1,6 @@
 ---
 name: testing-principles
-description: Design tests that prove real behavior and catch invalid states early. Use when writing or reviewing tests across Python, TypeScript, and JavaScript.
+description: Behavior-first test design that proves real behavior and catches invalid states early. Use when writing or reviewing tests across Python/TypeScript/JavaScript, especially for bug fixes and regression coverage. Do not use as a substitute for lint/typecheck/build/runtime verification gates.
 ---
 
 # Testing Principles

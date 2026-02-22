@@ -1,6 +1,6 @@
 ---
 name: typescript-tooling-workflow
-description: Use a strict TypeScript tooling workflow for environment setup, package management, and fast code search. Use when bootstrapping or maintaining TypeScript projects.
+description: TypeScript tooling workflow for environment setup, package management, and fast code search during project setup and maintenance. Use when bootstrapping or maintaining TypeScript projects. Do not use as the final completion gate before claiming code is complete (use typescript-verification-before-completion).
 ---
 
 # TypeScript Tooling Workflow

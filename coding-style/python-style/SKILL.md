@@ -1,9 +1,14 @@
 ---
 name: python-style
-description: Apply Google Python style and typing discipline with strict simplicity rules. Use when writing or reviewing Python code for naming, structure, docstrings, and static type safety. Combine with readable-clean-code for cross-language readability tie-breakers and complexity reduction.
+description: Google Python style and typing discipline for Python code (naming, structure, docstrings, and static type safety). Use after readable-clean-code when Python-specific conventions and type constraints are required. Keep this skill complementary to readable-clean-code; workspace skills override only when they explicitly state an override.
 ---
 
 # Google Python Style
+
+## Precedence contract
+1. Apply `readable-clean-code` first for the general readability/simplicity baseline.
+2. Apply this skill second for Python-specific conventions and typing constraints.
+3. If a workspace skill explicitly states it overrides a rule here, follow the explicit override; otherwise keep this skill in effect.
 
 ## Authoritative guides
 - Python style guide: `https://google.github.io/styleguide/pyguide.html`

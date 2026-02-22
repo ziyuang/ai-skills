@@ -1,9 +1,14 @@
 ---
 name: readable-clean-code
-description: Cross-language readability + simplicity overlay based on "The Art of Readable Code" and "The Art of Clean Code". Use when refactoring or reviewing for clarity/simplicity, or when choosing between implementations and you need time-to-understand tie-breakers. Use alongside language-specific style skills (e.g., python-style, typescript-javascript-style), not as a replacement.
+description: Primary cross-language readability and simplicity overlay based on The Art of Readable Code and The Art of Clean Code. Use first when writing, refactoring, or reviewing code, then pair with language-specific style/tooling/verification skills for constraints. Workspace skills may override rules here only when they explicitly state an override.
 ---
 
 # Readable + Clean Code Style
+
+## Precedence contract
+1. Apply this skill first as the default readability and simplicity baseline.
+2. Apply language-specific style skills (for example `python-style`, `typescript-javascript-style`) as complementary constraints, not replacements.
+3. Allow workspace skills to override a rule in this skill only when the workspace skill explicitly states that override.
 
 ## Core goal
 - Write code to minimize time-to-understand and prevent accidental complexity.
@@ -18,7 +23,7 @@ description: Cross-language readability + simplicity overlay based on "The Art o
 
 ## Decision rule
 - When choosing between two implementations, prefer the less intimidating / more inspectable version if it reduces time-to-understand.
-- Consistency beats the "right" style. Optimize for what your team can read quickly.
+- Consistency beats personal preference, within applicable language-specific and explicit workspace constraints.
 
 ## Agent workflow (apply in this order)
 1. State intent in one sentence: "This code does X given Y."
