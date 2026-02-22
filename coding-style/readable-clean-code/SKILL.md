@@ -41,6 +41,7 @@ description: Cross-language readability + simplicity overlay based on "The Art o
 - Optimize for humans: least surprise, quick inspection, easy safe change.
 - Keep units small: small functions, small modules, shallow indentation.
 - Separate responsibilities (SRP) and reduce coupling (Law of Demeter).
+- Prefer Open-Closed designs at stable seams: allow extension via new modules/strategies/adapters instead of modifying proven core flows.
 - Avoid duplication (DRY) and unnecessary features (YAGNI).
 - Refactor continuously (Boy Scout rule); use metrics as smoke alarms.
 - Avoid premature optimization; measure first and prefer algorithmic improvements.
@@ -148,5 +149,6 @@ description: Cross-language readability + simplicity overlay based on "The Art o
 - Comments: explain "why" and "what's tricky" rather than narrating code?
 - Structure: one job per function/module; shallow indentation; one abstraction level per function?
 - Coupling: SRP/DRY/YAGNI applied only where they reduce complexity; Law of Demeter violations avoided?
+- Extensibility: are stable paths open for extension but closed to risky modification (OCP), with new behavior added behind explicit seams?
 - Boundaries: inputs validated/normalized; errors explicit; no hidden side effects in conditionals?
 - Tests: readable, simplest meaningful inputs, failures are diagnostic, behavior-focused (not brittle)?
