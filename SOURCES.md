@@ -23,16 +23,6 @@ Use this file as the source manifest for your global skills directory.
 - Dustin Boswell, Trevor Foucher: *The Art of Readable Code* (O'Reilly)
 - Christian Mayer: *The Art of Clean Code: Best Practices to Eliminate Complexity and Simplify Your Life* (No Starch Press)
 
-## Local coding-style skill locations
-- `coding-style/python-style/SKILL.md`
-- `coding-style/typescript-javascript-style/SKILL.md`
-- `coding-style/opentofu-style/SKILL.md`
-- `coding-style/the-art-of-readable-code/SKILL.md`
-
-## Local IaC tooling + verification skill locations
-- `tooling-workflow/opentofu-tooling-workflow/SKILL.md`
-- `verification-before-completion/opentofu-verification-before-completion/SKILL.md`
-
 ## Inspirations from skills.sh
 - `verification-before-completion` (obra/superpowers): https://skills.sh/obra/superpowers/verification-before-completion
 - `systematic-debugging` (obra/superpowers): https://skills.sh/obra/superpowers/systematic-debugging
