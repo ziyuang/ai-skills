@@ -28,5 +28,5 @@ description: Google Python style and typing discipline for Python code (naming, 
 - Use precise return types; avoid implicit `None` return paths.
 - Use `T | None` for optional values; avoid broader unions that make static behavior ambiguous.
 - Use dataclasses or typed classes for structured data, not loose dicts.
-- Avoid free-form string keys when the key set is fixed; model fixed-key data with dataclasses or other typed classes.
+- When a string-shaped domain is actually bounded, model it explicitly: use dataclasses or other typed classes for fixed-key structures, and use `enum.StrEnum` for fixed sets of string values.
 - Use `Any` only when it is genuinely unavoidable; otherwise find concrete library types or introduce typed wrappers/protocols. Do not use `object` as a fallback type.
