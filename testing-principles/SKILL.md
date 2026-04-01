@@ -16,6 +16,10 @@ description: Behavior-first test design that proves real behavior and catches in
 - Keep pass conditions tied to real invariants, not helper-only internals.
 - For bug fixes, assert the failure first, then assert the corrected behavior.
 
+## Test style rules
+- Add a short test docstring that states the behavior or scenario under test.
+- Add a brief comment for each assertion or assertion block explaining why the expected value is correct.
+
 ## Illegal-state discipline
 - If a value or state is unexpected (examples: `null`/`None`/`undefined`), stop and ask why it is legal.
 - Trace unexpected state to its source before changing behavior.
