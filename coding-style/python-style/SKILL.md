@@ -14,15 +14,18 @@ description: Google Python style and typing discipline for Python code (naming, 
 - Python style guide: `https://google.github.io/styleguide/pyguide.html`
 - Google-style docstrings are mandatory for public modules, classes, and functions.
 
-## Required rules
+## Core constraints
 - Follow Google naming, import, and module structure conventions.
 - Annotate public APIs with Python 3.12+ type syntax.
 - Type determines behavior: prefer static, type-directed design over runtime value-driven branching.
 - Avoid runtime type checks in core logic when behavior can be made explicit through type design.
-- Do not use `if not ... else ...`; prefer positive conditions with `if ... else ...`.
 - Keep APIs explicit: avoid hidden side effects and magic sentinel values.
-- Prefer explicit constants and helper predicates for special states.
 - Keep module boundaries clean: parse/validate external input at edges.
+
+## Secondary style rules
+- Do not use `if not ... else ...`; prefer positive conditions with `if ... else ...`.
+- Prefer explicit constants and helper predicates for special states.
+- `@abstractmethod` implementations should raise `NotImplementedError`.
 
 ## Type discipline
 - Use precise return types; avoid implicit `None` return paths.
