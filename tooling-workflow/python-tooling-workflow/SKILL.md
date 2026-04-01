@@ -5,9 +5,11 @@ description: Python tooling workflow for environment setup, dependency managemen
 
 # Python Tooling Workflow
 
-* Detect host OS before activating virtual environment.
+* If you need to activate the virtual environment, detect host OS first.
   - Windows: `.venv\Scripts\activate`
   - Linux/macOS: `source .venv/bin/activate`
-* Use `uv` for dependency changes (`uv add`, `uv remove`). Do not use `pip`.
-* Do not hand-edit dependency adds/removals in `pyproject.toml`.
+* Use `uv` as the project command runner and dependency manager.
+  - For dependency changes, use `uv add` and `uv remove`. Do not use `pip`.
+  - To execute Python commands, use `uv run` (`uv run python`, `uv run pytest`, `uv run ruff`). Do not invoke bare `python` for project commands.
+  - Do not hand-edit dependency adds/removals in `pyproject.toml`.
 * Run static checks as default gate (`ruff`, `mypy`, tests).
