@@ -26,6 +26,12 @@ description: Google Python style and typing discipline for Python code (naming, 
 - Do not use `if not ... else ...`; prefer positive conditions with `if ... else ...`.
 - Prefer explicit constants and helper predicates for special states.
 - `@abstractmethod` implementations should raise `NotImplementedError`.
+- Module docstrings should use the multi-line form:
+  `"""`
+  `<docstring>`
+  `"""`
+  not the one-line form ``"""<docstring>"""``.
+- If using `# noqa: <code>`, include the human-readable rule name nearby so the suppression is understandable in review.
 
 ## Type discipline
 - Use precise return types; avoid implicit `None` return paths.
