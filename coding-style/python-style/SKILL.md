@@ -33,6 +33,7 @@ description: Google Python style and typing discipline for Python code (naming, 
   not the one-line form ``"""<docstring>"""``.
 - If using `# noqa: <code>`, include the human-readable rule name in the form of `# noqa: <code> - <code-text>` so the suppression is understandable in review.
   - Example: `# noqa: E741 - ambiguous-variable-name`
+- `StrEnum` members should use the member name as the value, for example `FIELD_NAME = "FIELD_NAME"`. Do not maintain parallel naming schemes in enum names and enum values.
 
 ## Type discipline
 - Use precise return types; avoid implicit `None` return paths.
