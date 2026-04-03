@@ -115,6 +115,7 @@ description: Primary cross-language readability and simplicity overlay based on 
 - Keep indentation shallow; extract helpers to reduce nested control flow.
 - Keep interfaces small and unsurprising; prefer simple inputs/outputs.
 - Wrap ugly or overly-flexible dependencies behind a narrow adapter interface.
+- Keep dependencies one-directional across modules/packages/folders; avoid back-and-forth coupling between large areas of the codebase even when no strict circular import exists.
 - Avoid method-chaining across multiple objects (Law of Demeter); pass what you need explicitly.
 - Use SRP to decide boundaries: split units with different reasons to change.
 - Keep one level of abstraction per function; do not mix orchestration with low-level parsing.
@@ -153,7 +154,7 @@ description: Primary cross-language readability and simplicity overlay based on 
 - Names: specific, unambiguous, and encode key constraints (units/range/state)?
 - Comments: explain "why" and "what's tricky" rather than narrating code?
 - Structure: one job per function/module; shallow indentation; one abstraction level per function?
-- Coupling: SRP/DRY/YAGNI applied only where they reduce complexity; Law of Demeter violations avoided?
+- Coupling: SRP/DRY/YAGNI applied only where they reduce complexity; dependencies remain one-directional across major modules/folders; Law of Demeter violations avoided?
 - Extensibility: are stable paths open for extension but closed to risky modification (OCP), with new behavior added behind explicit seams?
 - Boundaries: inputs validated/normalized; errors explicit; no hidden side effects in conditionals?
 - Tests: readable, simplest meaningful inputs, failures are diagnostic, behavior-focused (not brittle)?
