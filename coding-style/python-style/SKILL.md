@@ -31,7 +31,8 @@ description: Google Python style and typing discipline for Python code (naming, 
   `<docstring>`
   `"""`
   not the one-line form ``"""<docstring>"""``.
-- If using `# noqa: <code>`, include the human-readable rule name nearby so the suppression is understandable in review.
+- If using `# noqa: <code>`, include the human-readable rule name in the form of `# noqa: <code> - <code-text>` so the suppression is understandable in review.
+  - Example: `# noqa: E741 - ambiguous-variable-name`
 
 ## Type discipline
 - Use precise return types; avoid implicit `None` return paths.
