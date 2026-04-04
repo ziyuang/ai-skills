@@ -16,6 +16,7 @@ description: Boundary-first error handling with fail-fast core logic across lang
 - Keep one owner for retry policy; avoid stacked retries.
 - Do not log-and-raise in the same layer.
 - Keep error messages machine-usable and developer-actionable.
+- Include concrete diagnostics in error messages whenever the values are available at the boundary: requested input, allowed range, current state/phase, ids involved, and actual vs expected quantities.
 
 ## Boundary checklist
 1. Validate external input once.

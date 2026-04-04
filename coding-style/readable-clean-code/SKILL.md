@@ -119,6 +119,8 @@ description: Primary cross-language readability and simplicity overlay based on 
 - Avoid method-chaining across multiple objects (Law of Demeter); pass what you need explicitly.
 - Use SRP to decide boundaries: split units with different reasons to change.
 - Keep one level of abstraction per function; do not mix orchestration with low-level parsing.
+- Treat very large modules as a design warning: if a file is growing toward roughly 800 lines, stop and consider splitting it at a real responsibility boundary before adding more behavior.
+- When one concern grows into several closely related modules, prefer a dedicated folder/package with a coherent public surface over leaving many loosely grouped sibling files at one package level.
 
 ## Organization (one task at a time)
 - Organize code so it is doing only one task at a time.
@@ -137,6 +139,7 @@ description: Primary cross-language readability and simplicity overlay based on 
 - Validate and normalize inputs at the boundary; keep core logic operating on clean data.
 - Fail early and noisily when continuing would hide errors or corrupt state.
 - Prefer explicit error paths over implicit "best effort" behavior when correctness matters.
+- Make error messages diagnostic: include the runtime values and relevant constraints or context that explain why the failure occurred, instead of relying on fixed generic sentences when that information is available at the raise site.
 
 ## Metrics (use as signals)
 - Use metrics as signals (nesting depth, function length, cyclomatic complexity, duplication, churn) to decide where to simplify, not to "game" numbers.
