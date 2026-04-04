@@ -17,8 +17,10 @@ description: Google Python style and typing discipline for Python code (naming, 
 ## Core constraints
 - Follow Google naming, import, and module structure conventions.
 - Annotate public APIs with Python 3.12+ type syntax.
+- Typing is modeling: use types to make domain structure and valid states explicit.
 - Type determines behavior: prefer static, type-directed design over runtime value-driven branching.
 - Avoid runtime type checks in core logic when behavior can be made explicit through type design.
+- Prefer static structure over dynamic lookup; avoid `getattr`/`hasattr`-style designs when explicit types or protocols can model the behavior directly.
 - Keep APIs explicit: avoid hidden side effects and magic sentinel values.
 - Keep module boundaries clean: parse/validate external input at edges.
 
@@ -41,4 +43,6 @@ description: Google Python style and typing discipline for Python code (naming, 
 - Use dataclasses or typed classes for structured data, not loose dicts.
 - When a string-shaped domain is actually bounded, model it explicitly: use dataclasses or other typed classes for fixed-key structures, and use `enum.StrEnum` for fixed sets of string values.
 - Prefer typed dispatch (`match`/`case`, explicit variant types, or protocols) over `hasattr`/`getattr` checks when behavior depends on shape or capability.
+- Avoid `typing.TYPE_CHECKING` imports when they mainly paper over dependency direction problems; if type-only references are needed because modules point at each other, fix the module boundaries instead of normalizing the cycle.
+- Treat `typing.cast` as a last resort; if a cast is needed to make the code type-check, first ask whether the data model, API boundary, or control flow should be made explicit in the types.
 - Use `Any` only when it is genuinely unavoidable; otherwise find concrete library types or introduce typed wrappers/protocols. Do not use `object` as a fallback type.
