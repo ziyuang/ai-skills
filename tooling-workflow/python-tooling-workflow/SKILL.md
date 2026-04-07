@@ -12,6 +12,7 @@ description: Python tooling workflow for environment setup, dependency managemen
   - Keep using the dependency manager already established in the repository. Do not mix managers.
 * Use the project's dependency manager as the command runner and dependency manager.
   - For dependency changes, use the manager's add/remove commands (`poetry add`/`poetry remove` or `uv add`/`uv remove`). Do not use `pip`.
+  - When adding dependencies, do not specify version constraints.
   - To execute Python commands, use the manager's run command (`poetry run python`, `poetry run pytest`, `poetry run ruff` or `uv run python`, `uv run pytest`, `uv run ruff`). Do not invoke bare `python` for project commands.
   - Do not hand-edit dependency adds/removals in `pyproject.toml`.
 * Run static checks as default gate (`ruff`, `mypy`, tests).
