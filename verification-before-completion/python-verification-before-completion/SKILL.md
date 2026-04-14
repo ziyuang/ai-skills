@@ -5,8 +5,9 @@ description: Final Python completion gate with required static and runtime check
 
 # Python Verification Before Completion
 
-- No completion claims without fresh command output.
-- Run narrow checks first, then full project checks.
+- This skill is a mandatory completion gate after Python code edits and before any claim that work is complete, fixed, or ready.
+- No completion claims without fresh command output from the relevant verification commands.
+- Run narrow checks first, then full project checks when the narrow checks pass and the repo workflow calls for them.
 
 ## Standard gate order
 1. `ruff format --check .`
@@ -15,7 +16,10 @@ description: Final Python completion gate with required static and runtime check
 4. `pytest -q`
 
 ## Rules
+- At minimum, run the gate on the touched files or the narrowest relevant test target before ending the task.
+- If the repository standard is broader than touched-file checks, run the repository-standard commands before claiming completion.
 - If a project uses different commands, run its local equivalents.
+- If formatting is required to make the gate pass, run the formatter, then rerun the verification commands and report the final clean output.
 - If any gate is skipped, state why and state risk.
 - If any gate fails, do not claim completion.
 - For bug fixes, include or update a regression test.
