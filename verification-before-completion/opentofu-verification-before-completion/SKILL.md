@@ -1,6 +1,6 @@
 ---
 name: opentofu-verification-before-completion
-description: Final OpenTofu/Terraform completion gate with required fmt/init/validate/plan evidence before claiming infrastructure changes are complete. Use immediately before completion claims. Do not use as a substitute for ongoing workflow setup/maintenance decisions.
+description: Final OpenTofu/Terraform completion gate with required fmt/init/validate/plan verification. Use when infrastructure changes are described as complete, done, or ready — or when verifying work before applying changes. Do not use as a substitute for ongoing workflow setup/maintenance decisions.
 ---
 
 # OpenTofu Verification Before Completion

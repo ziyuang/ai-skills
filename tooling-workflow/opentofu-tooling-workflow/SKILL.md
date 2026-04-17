@@ -1,6 +1,6 @@
 ---
 name: opentofu-tooling-workflow
-description: OpenTofu/Terraform tooling workflow for initialization, formatting, validation, planning, and safe state handling during day-to-day infrastructure work. Use when bootstrapping or maintaining infrastructure repositories. Do not use as the final completion gate before claiming infra changes are complete (use opentofu-verification-before-completion).
+description: OpenTofu/Terraform tooling workflow for initialization, formatting, validation, planning, and safe state handling. Use when bootstrapping, maintaining, or running day-to-day OpenTofu/Terraform operations (init, fmt, validate, plan, apply, state). Do not use as the final completion gate before claiming infra changes are complete (use opentofu-verification-before-completion).
 ---
 
 # OpenTofu Tooling Workflow

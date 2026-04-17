@@ -1,6 +1,6 @@
 ---
 name: python-style
-description: Google Python style and typing discipline for Python code (naming, structure, docstrings, and static type safety). Use after readable-clean-code when Python-specific conventions and type constraints are required. Keep this skill complementary to readable-clean-code; workspace skills override only when they explicitly state an override.
+description: Google Python style and typing discipline for Python code (naming, structure, docstrings, and static type safety). Use when writing, editing, or reviewing Python code — pair with readable-clean-code and apply after it. Workspace skills override only when they explicitly state an override.
 ---
 
 # Google Python Style

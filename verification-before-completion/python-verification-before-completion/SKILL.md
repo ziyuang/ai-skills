@@ -1,6 +1,6 @@
 ---
 name: python-verification-before-completion
-description: Final Python completion gate with required static and runtime checks before claiming code is complete, fixed, or ready. Use immediately before completion claims. Do not use as a substitute for setup/maintenance workflow guidance.
+description: Final Python completion gate with required static and runtime checks. Use when Python code is described as complete, fixed, done, or ready — or when verifying work before committing or deploying. Do not use as a substitute for setup/maintenance workflow guidance.
 ---
 
 # Python Verification Before Completion
@@ -24,4 +24,4 @@ description: Final Python completion gate with required static and runtime check
 - If any gate fails, do not claim completion.
 - For bug fixes, include or update a regression test.
 - Do not merge formatting, refactor, and functional fixes without separate verification evidence.
-- Apply `skills/testing-principles/SKILL.md` when creating or reviewing tests.
+- Apply the `testing-principles` skill when creating or reviewing tests.

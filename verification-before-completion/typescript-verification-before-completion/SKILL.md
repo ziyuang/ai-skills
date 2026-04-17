@@ -1,6 +1,6 @@
 ---
 name: typescript-verification-before-completion
-description: Final TS/JS completion gate with required lint, typecheck, tests, and build evidence before claiming work is complete. Use immediately before completion claims. Do not use as a substitute for setup/maintenance workflow guidance.
+description: Final TypeScript/JavaScript completion gate with required lint, typecheck, tests, and build verification. Use when TS/JS code is described as complete, fixed, done, or ready — or when verifying work before committing or deploying. Do not use as a substitute for setup/maintenance workflow guidance.
 ---
 
 # TypeScript Verification Before Completion
@@ -20,4 +20,4 @@ description: Final TS/JS completion gate with required lint, typecheck, tests, a
 - If any gate fails, do not claim completion.
 - For bug fixes, add or update regression coverage.
 - Do not claim success from lint-only output when typecheck or tests were not executed.
-- Apply `skills/testing-principles/SKILL.md` when creating or reviewing tests.
+- Apply the `testing-principles` skill when creating or reviewing tests.
