@@ -59,6 +59,7 @@ description: Primary cross-language readability and simplicity overlay based on 
 - Use consistent naming patterns to convey meaning (e.g., `*_count`, `*_id`, `*_secs`, `is_*`, `has_*`).
 - Name booleans as predicates; avoid double-negatives and "anti-names" like `disable_*` when a positive form exists.
 - Scrutinize ambiguity: ask "What else could a reader think this means?"
+- Do not create terminology divergence on purpose: before naming something, check whether a synonym for the same concept is already established nearby (file name, sibling functions, test file name, calling code) and reuse that term instead of a fresh one. When two synonyms already coexist for one concept, resolve toward whichever term is more prevalent across callers and tests.
 - Prefer pronounceable names; readability includes how easily the name can be talked about in reviews.
 - Be explicit about range semantics:
   - Prefer `min`/`max` for inclusive limits.
